@@ -2,12 +2,12 @@
 
 <div id="all-users">
   <% @users.each do |user| %>
-    <h2><%= user.name %></h2>
-    <%= link_to "View", user %>
+    <h2><%= link_to user.name, user %></h2>
+    <%= link_to "Edit", edit_user_path(user) %>
     <%= link_to "Delete", user, method: :delete, data: {confirm: "Are you sure?" } %>
   <% end %>
 </div>
 
-<div id="users-options">
+<div class="users-options">
   <%= link_to "New User", new_user_path %>
 </div>
