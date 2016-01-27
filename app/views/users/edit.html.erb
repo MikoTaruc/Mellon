@@ -1,5 +1,5 @@
-<%= form_for @user do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.submit "Submit" %>
-<% end %>
+<%= render partial: 'form' %>
+
+<div class="users-options">
+  <%= link_to "Back to Users", users_path %>
+</div>
