@@ -13,7 +13,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'figaro'
 
+# Styles
 gem 'bootstrap-sass', '3.2.0.0'
+gem 'font-awesome-rails'
 
 group :development, :test do
   gem 'byebug'
